@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+$header1: 4.2rem;
+$header2: 3.3rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$text: 2rem;
+
+@mixin flex($justify,$flex-flow,$align) {
+    display: flex;
+    justify-content: $justify;
+    flex-flow: $flex-flow;
+    align-items: $align;
+}
+
+@import "_global.scss";
+@import "_to-do-page.scss";
+

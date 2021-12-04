@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.3rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4, h5 {
+  font-size: 2.5rem;
+}
+
+.container {
+  min-height: 10vh;
+  margin: 0 0 auto;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: row wrap;
+  flex-flow: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav {
+  width: 50%;
+  margin: 0 0 auto;
+  display: flex;
+  justify-content: row wrap;
+  flex-flow: center;
+  align-items: center;
+}
+
+nav img {
+  display: flex;
+  justify-content: row wrap;
+  flex-flow: flex-end;
+  align-items: center;
+  max-width: 10vh;
+  max-height: 10vh;
+}
+
+.logo {
+  flex: 1 1 20rem;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: row wrap;
+  flex-flow: center;
+  align-items: center;
+  flex: 1 1 20rem;
+}
+
+ul li {
+  margin: 0 1rem;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-top: 2rem;
+  min-height: 80vh;
+}
+
+.intro::after {
+  background-image: url("../img/undraw_prototyping_process_re_7a6p 1.jpg");
+  background-repeat: no-repeat;
+  background-position: start;
+  opacity: 0.1;
+  top: 10rem;
+  left: 20rem;
+  bottom: 0rem;
+  right: 0rem;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+form input, form button {
+  border: none;
+  background-color: lightblue;
+  padding: 0.5rem;
+}
+
+form button {
+  background-color: #F08080;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+form button:hover {
+  color: white;
+  background-color: #ADD8E6;
+}
+
+.listcontainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.todolist {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 30%;
+}
+
+.todo {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0.5rem;
+  transition: all 0.45s;
+}
+
+.Check-button {
+  padding: 0rem 0.5rem;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #F08080;
+  font-size: 1.5rem;
+}
+
+.delete-button {
+  padding: 0rem 0.5rem;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+}
+
+.Check-button:hover {
+  background-color: green;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.remove {
+  transform: translateX(5rem);
+  opacity: 0;
+}
+
+.inputform {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  margin-left: 10rem;
+}
+
+select {
+  margin-left: 1rem;
+  width: 5rem;
+  cursor: pointer;
+  color: #F08080;
+}
+
+.select {
+  border: none;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
